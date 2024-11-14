@@ -1,0 +1,33 @@
+-Certbot	SSL Certificate	generation
+
+*certbot install
+$sudo snap install core
+$sudo snap refresh core
+$duso apt remove certbot
+$sudo snap install --classic certbot
+$sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+*running certbot
+$sudo vfw allow 443
+$sudo certbot certonly --standalone -d your_domain
+
+nginx must be disabled!
+sudo -s	// for root user
+
+Ex:
+$sudo certbot certonly --standalone -d daggly.com
+
+Path:
+/etc/letsencrypt/live/your_domain/fullchain.pem , privkey.pem
+
+-openssl *.12 from pem files
+$openssl -export -in fullchain.pem -inkey privkey.pem -out keystore.p12 -name tomcat -CAfile chain.pem -caname root
+// password is from the key_store_password in springboot gateway service's application.yml
+
+Server:
+  ssl: key_store_type:pkcs12
+       ...
+       key_store_password: tutoring
+
+Ip get from ping daggly.com
+putty private key *.ppk

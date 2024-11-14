@@ -1,0 +1,5 @@
+Title : Sabo Triger Circuit
+Date : 2018.10
+Skills: Digital Circuit design, Sensor signal process, restric timing, User interface, PCB design, firmware programming
+
+Desc: It is Triger circuit for High resolution cameras to capture motion image such as water droplets.

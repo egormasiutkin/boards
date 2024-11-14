@@ -1,0 +1,6 @@
+Title : Sterling Light Dimming Circuit
+Date : 2018.4
+Skills: Analog Circuit design, Power Circuit design, PWM buck-boost power configuration, Current Sensing and feedback Control, PCB design,
+
+Desc: It is driver circuit for LEDs and controlled by HV9963 from MicroChip. It is driven by current constant control so we can connect any counts LEDs in serial.
+        And it has some feedback and user control logic by circuit potentiometer and protection unit.

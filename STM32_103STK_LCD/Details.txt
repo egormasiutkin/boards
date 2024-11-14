@@ -1,0 +1,5 @@
+Title : STM32 103STK board programming
+Date : 2018.12
+Skills: STM32 firmware programming, LCD interface, RS485(MODBUS) communication
+
+Desc: It is task for Slot gaming machine's User Interface with communication and some user keys.
